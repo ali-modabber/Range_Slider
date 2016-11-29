@@ -67,10 +67,6 @@
 		var original_step = parent_max / _data_unit;
 		var type = $(this).attr('data-type');
 		var _real_min =_my_min*original_step;
-
-		// console.log(original_step);
-		// console.log(_data_unit);
-		// console.log(_my_min*original_step);
 		if (type == 'horizontal')
 		{
 			dynamic_range.css("left",_real_min);

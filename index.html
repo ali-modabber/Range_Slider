@@ -3,7 +3,7 @@
   <meta charset="UTF8">
   <title>Ranje Slider</title>
   <meta name="description" content="Ranje Slider"/>
-  <link rel="stylesheet" href="http://static.dev/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="http://static.dev/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="http://static.dev/css/ermile.css"> -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0 maximum-scale=1.0, user-scalable=no, minimal-ui"/>
@@ -15,31 +15,13 @@
 </head>
 
 <body>
+  <div class="range-slider" data-type="horizontal" data-step="5" data-min="1500" data-max='2135'>
+  </div>
 
-  <div class="range-slider" data-type="horizontal" data-min="0" data-max='100'>Between 0 - 100</div>
-  <div class="range-slider" data-type="horizontal" data-min="0" data-max='100' data-min-default='20'>Between 0 - 100 - set on 20</div>
-  <div class="range-slider" data-type="horizontal" data-min="0" data-max='100' data-max-default='70'>Between 0 - 100 - set on 70</div>
-  <div class="range-slider" data-type="horizontal" data-min="0" data-max='100' data-max-default='70' data-max-default='70'>Between 0 - 100 - set 20 -70</div>
-
-  <hr />
-
-  <div class="range-slider" data-type="horizontal" data-min="1" data-max="3" data-step="5" data-unit='4'></div>
-  <div class="range-slider" data-type="vertical" data-infinity='double' data-unit='10' data-max="8" data-min="1"></div>
-  <div class="range-slider" data-type="vertical" data-infinity='single' data-unit='8' data-max="7"></div> <!-- default is min -->
-  <div class="range-slider" data-type="vertical" data-infinity='max' data-unit='100' data-max="80"></div>
-  <span class="range-slider" data-type="vertical" data-infinity='min' data-unit='200' data-min="90" style="height:30px"></span><!-- data-min="90" -->
-  <span class="range-slider" data-type="vertical" data-infinity='min' data-unit='100' data-max="90" data-min="20"></span><!-- data-min="20" -->
-
-  <div class="range-slider" data-type="horizontal" data-infinity='max' data-unit='5' data-min="1" style="width:200px"></div>
-  <span class="range-slider" data-type="horizontal" data-infinity='min' data-unit='50' data-min="10"></span>
-  <span class="range-slider" data-type="horizontal" data-infinity='min' data-unit='30' data-min="15"></span>
-  <span class="range-slider" data-type="horizontal" data-infinity='min' data-unit='100' data-min="18"></span>
-  <span class="range-slider" data-type="horizontal" data-infinity='min' data-unit='102' data-min="10"></span>
-  <span class="range-slider" data-type="horizontal" data-infinity='min' data-unit='100' data-min="10"></span>
-
-  <div class="range-slider" data-type="vertical" data-infinity='max' data-unit='80' data-min='30' data-max="75"></div>
-<script src="script.js"></script>
-<script type="text/javascript">
+  <div class="range-slider" data-type="vertical" data-min='1501' data-max='1620' data-step='5' data-max-default='70'>
+  </div>
+  <script src="script.js"></script>
+  <script type="text/javascript">
   $(document).ready(function() {
     $(".range-slider").ermile_slider();
   });
